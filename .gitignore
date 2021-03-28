@@ -1,0 +1,9 @@
+[Tt]humbs.db*
+*.DS_Store
+nbproject/
+bin/Tools/modules/AutoTests/[Rr]eport*/
+bin/[Rr]eports/
+*:Zone.Identifier
+node_modules/
+npm-debug.log
+update.drp.su/

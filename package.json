@@ -1,0 +1,36 @@
+{
+  "name": "driverpack-solution",
+  "private": true,
+  "scripts": {
+    "babel": "babel src -w --out-dir bin/js",
+    "test": "standard src/*",
+    "watch": "watch 'npm test' -d",
+    "start": "browser-sync start --server bin --index /DriverPackSolution.html --files bin"
+  },
+  "devDependencies": {
+    "babel": "5.8.20",
+    "babel-eslint": "4.0.5",
+    "bluebird": "2.9.34",
+    "browser-sync": "^2.7.13",
+    "gulp": "3.9.0",
+    "gulp-git": "1.2.4",
+    "gulp-util": "3.0.6",
+    "standard": "5.0.2"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": [
+      "AppData",
+      "constants",
+      "driver_exists",
+      "Enumerator",
+      "fso",
+      "locator",
+      "log",
+      "objWMIService",
+      "OSVersion",
+      "wget_path",
+      "WshShell"
+    ]
+  }
+}
